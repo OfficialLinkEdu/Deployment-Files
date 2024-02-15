@@ -1,5 +1,4 @@
-apiversion: 3
-
+version: '3'
 services:
   application-server:
     build: danielmc02/stateless-application-server0:0.0.1
@@ -10,4 +9,3 @@ services:
       - "80:80"
   central-user-database:
     build: danielmc02/central-user-database-server0:0.0.1
-    
