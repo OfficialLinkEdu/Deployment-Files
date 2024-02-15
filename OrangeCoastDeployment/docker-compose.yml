@@ -1,0 +1,13 @@
+apiversion: 3
+
+services:
+  application-server:
+    build: danielmc02/stateless-application-server0:0.0.1
+
+  load-balancer:
+    build: danielmc02/load-balancer-server0:0.0.1
+    ports:
+      - "80:80"
+  central-user-database:
+    build: danielmc02/central-user-database-server0:0.0.1
+    
