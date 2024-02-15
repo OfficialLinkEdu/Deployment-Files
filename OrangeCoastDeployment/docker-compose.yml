@@ -1,11 +1,11 @@
 version: '3'
 services:
   application-server:
-    image: danielmc02/stateless-application-server0:0.0.1
+    image: danielmc02/stateless-application-server0:amd64-0.0.1
 
   load-balancer:
-    image: danielmc02/load-balancer-server0:0.0.1
+    image: danielmc02/load-balancer-server0:amd64-0.0.1
     ports:
       - "80:80"
   central-user-database:
-    image: danielmc02/central-user-database-server0:0.0.1
+    image: danielmc02/central-user-database-server0:amd64-0.0.1
